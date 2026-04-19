@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: yf1
+name: yf1
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - yf1_left
+  - yf1_right

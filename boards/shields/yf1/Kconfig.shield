@@ -1,0 +1,4 @@
+config SHIELD_YF1_LEFT
+    def_bool $(shields_list_contains,yf1_left)
+config SHIELD_YF1_RIGHT
+    def_bool $(shields_list_contains,yf1_right)
