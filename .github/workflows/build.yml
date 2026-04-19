@@ -1,12 +1,5 @@
-
-include:
-  - board: akdk_bt1
-    shield: yf1_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: akdk_bt1
-    shield: yf1_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: akdk_bt1
-    shield: settings_reset
+name: Build
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  build:
+    uses: sekigon-gonnoc/auto-kdk-zmk-template/.github/workflows/build.yml@main
